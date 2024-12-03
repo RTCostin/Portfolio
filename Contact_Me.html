@@ -8,6 +8,9 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
+            background-image: url('https://www.cdaresort.com/wp-content/uploads/2024/06/HEADER.jpg');
+            background-size: cover;
+            background-position: center;
         }
         .container {
             display: flex;
@@ -19,11 +22,6 @@
         }
         h1 {
             text-align: center;
-        }
-        .separator {
-            height: 5px;
-            background: black;
-            margin: 20px 0;
         }
         .purina-grid {
             display: grid;
@@ -41,27 +39,32 @@
             background: white;
         }
         .example {
-            background: black;
+            background: rgba(0, 0, 0, 0.6);
             color: white;
         }
         .description {
-            background: #f1f1f1;
+            background: #f1f1f180;
             color: #333;
         }
         .blank {
             border: none;
-            background: white;
+            background: rgba(255, 255, 255, 0);
         }
         .toc {
             width: 16%;
-            background: #f1f1f1;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
             padding: 20px;
-            border-left: 2px solid #ccc;
+            border-radius: 10px;
             overflow-y: auto;
+            position: sticky;
+            top: 0;
         }
         .toc h2 {
+            font-size: 2em;
             text-align: center;
             margin-top: 0;
+            color: white;
         }
         .toc ul {
             list-style: none;
@@ -71,40 +74,34 @@
             margin-bottom: 10px;
         }
         .toc a {
+            font-size: 1.5em;
             text-decoration: none;
-            color: #333;
+            color: white;
         }
         .toc a:hover {
-            color: #00ff00;
+            color: #1100ff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Main Content Section -->
         <div class="content">
             <h1>Contact Me</h1>
-            <div class="separator"></div>
             <div class="purina-grid">
-                <!-- Grid Boxes -->
-                <div class="grid-item blank"></div>
-                <div class="grid-item example">Email</div>
-                <div class="grid-item blank"></div>
                 <div class="grid-item example">Phone</div>
-                <div class="grid-item description">ryantcostin@gmail.com</div>
+                <div class="grid-item example">Email</div>
                 <div class="grid-item example">Social Media</div>
                 <div class="grid-item description">+1 (208)-661-0277</div>
-                <div class="grid-item blank"></div>
+                <div class="grid-item description">ryantcostin@gmail.com</div>
                 <div class="grid-item description">Instagram: @ryco.costin <br> Linkedin: Ryan Costin <br> Indeed: Ryan Costin</div>
             </div>
         </div>
-        <!-- Table of Contents Section -->
         <div class="toc">
             <h2>Table of Contents</h2>
             <ul>
                 <li><a href="Welcome.html">Welcome</a></li>
+                <li><a href="About_Me.html">About Me</a></li>
                 <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact_Me.html">Contact Me</a></li>
             </ul>
         </div>
     </div>
