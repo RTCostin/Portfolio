@@ -12,59 +12,84 @@
             background-size: cover;
             background-position: center;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            display: flex;
-            min-height: 100vh;
-        }
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            font-size: 3.6em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.75em;
-            line-height: 1.6;
-            margin: 20px 0;
-            color: white;
-        }
-        .toc {
-            width: 16%;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            overflow-y: auto;
-            position: sticky;
-            top: 0;
-        }
-        .toc h2 {
-            font-size: 2em;
-            margin-top: 0;
-            color: #ddd;
-        }
-        .toc ul {
-            list-style: none;
-            padding: 0;
-        }
-        .toc li {
-            margin-bottom: 20px;
-        }
-        .toc a {
-            font-size: 1.5em;
-            text-decoration: none;
-            color: white;
-        }
-        .toc a:hover {
-            color: #1100ff;
+            }
+            .container {
+                display: flex;
+                min-height: 100vh;
+            }
+            .content {
+                flex: 1;
+                padding: 20px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 3.6em;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 1.75em;
+                line-height: 1.6;
+                margin: 20px 0;
+                color: white;
+            }
+            .toc {
+                width: 16%;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.6);
+                padding: 20px;
+                border-radius: 10px;
+                overflow-y: auto;
+                position: sticky;
+                top: 0;
+            }
+            .toc h2 {
+                font-size: 2em;
+                margin-top: 0;
+                color: #ddd;
+            }
+            .toc ul {
+                list-style: none;
+                padding: 0;
+            }
+            .toc li {
+                margin-bottom: 20px;
+            }
+            .toc a {
+                font-size: 1.5em;
+                text-decoration: none;
+                color: white;
+            }
+            .toc a:hover {
+                color: #1100ff;
+            }
+
+            @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .toc {
+                width: 100%;
+                position: static;
+                order: 1;
+                margin-bottom: 20px;
+            }
+            .content {
+                order: 2;
+            }
+            .purina-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 10px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            .toc h2 {
+                font-size: 1.5em;
+            }
+            .toc a {
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>

@@ -59,6 +59,7 @@
             overflow-y: auto;
             position: sticky;
             top: 0;
+            order: 2; /* Places TOC after content */
         }
         .toc h2 {
             font-size: 2em;
@@ -81,10 +82,49 @@
         .toc a:hover {
             color: #1100ff;
         }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .toc {
+                width: 100%;
+                position: static;
+                order: 1;
+                margin-bottom: 20px;
+            }
+            .content {
+                order: 2;
+            }
+            .purina-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 10px;
+            }
+            .grid-item {
+                height: 100px;
+            }
+            .grid-item:nth-child(1) { order: 1; }
+            .grid-item:nth-child(4) { order: 2; }
+            .grid-item:nth-child(2) { order: 3; }
+            .grid-item:nth-child(5) { order: 4; }
+            .grid-item:nth-child(3) { order: 5; }
+            .grid-item:nth-child(6) { order: 6; }
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+            .toc h2 {
+                font-size: 1.5em;
+            }
+            .toc a {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Main Content Section -->
         <div class="content">
             <h1>Contact Me</h1>
             <div class="purina-grid">
@@ -96,6 +136,7 @@
                 <div class="grid-item description">Instagram: @ryco.costin <br> Linkedin: Ryan Costin <br> Indeed: Ryan Costin</div>
             </div>
         </div>
+        <!-- Table of Contents Section -->
         <div class="toc">
             <h2>Table of Contents</h2>
             <ul>

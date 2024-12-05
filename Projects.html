@@ -8,8 +8,8 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            color: white;
-            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQ87ws3M7PjjYhRtdxrOG0okbGS3t9LeNx_svnI4sGERrr8FA0Ez_PiRiEv0bpcCFtBfjgm8I2gWMwHZxLZSp_QZYbqqLvO_JcHWKZhbk2G-ecwXiSPFEWOJSSHZYNEWReIRBb4nlweJ_D/w3840-h2400-c/sekiro-shadows-die-twice-art-uhdpaper.com-8K-39.jpg');
+            color: black;
+            background-image: url('https://www.vacation-retreats.com/custimages/slide1.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -129,6 +129,46 @@
         .toc a:hover {
             color: #1100ff;
         }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .toc {
+                width: 100%;
+                position: static;
+                order: 1;
+            }
+            .content {
+                order: 2;
+            }
+            .purina-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                gap: 10px;
+            }
+            .grid-item {
+                height: 300px;
+            }
+            .example1 { order: 1; }
+            .description1 { order: 2; }
+            .example2 { order: 3; }
+            .description2 { order: 4; }
+            .example3 { order: 5; }
+            .description3 { order: 6; }
+            .blank {
+                display: none;
+            }
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 10px;
+            }
+            .toc h2 {
+                font-size: 1.5em;
+            }
+            .toc a {
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -141,7 +181,7 @@
                 <div class="grid-item example1">Battleship</div>
                 <div class="grid-item blank"></div>
                 <div class="grid-item example2">Pacman</div>
-                <div class="grid-item description">
+                <div class="grid-item description description1">
                     <p>
                         - C++ Program of classic game Battleship <br>
                         - Features 2 sets of 2D array boards with 2D I/O <br>
@@ -149,11 +189,11 @@
                     </p>
                     <div class="link">
                         <strong>GitHub:</strong>
-                        <a href="https://github.com/username/battleship" target="_blank">View Repository</a>
+                        <a href="https://github.com/CS150-Fall23/pa8-wii-unfit" target="_blank">View Repository</a>
                     </div>
                 </div>
                 <div class="grid-item example3">Lexer</div>
-                <div class="grid-item description">
+                <div class="grid-item description description2">
                     <p>
                         - C++ version of classic game Pac-Man <br>
                         - Complete point system, lives system, and animations <br>
@@ -162,11 +202,11 @@
                     </p>
                     <div class="link">
                         <strong>GitHub:</strong>
-                        <a href="https://github.com/username/lexer" target="_blank">View Repository</a>
+                        <a href="https://github.com/SuttonU/C-Man" target="_blank">View Repository</a>
                     </div>
                 </div>
                 <div class="grid-item blank"></div>
-                <div class="grid-item description">
+                <div class="grid-item description description3">
                     <p>
                         - Replication of lexer program in C <br>
                         - Reads provided code file to determine lexemes <br>
@@ -174,7 +214,7 @@
                     </p>
                     <div class="link">
                         <strong>GitHub:</strong>
-                        <a href="https://github.com/username/placeholder" target="_blank">View Repository</a>
+                        <a href="https://github.com/CS210-Fall2024/lexer-midterm-project-RTCostin" target="_blank">View Repository</a>
                     </div>
                 </div>
             </div>
